@@ -1,0 +1,231 @@
+.header{
+   
+    padding: 15px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px gray;
+    box-shadow: 0px 5px 5px gray;
+    background-image: url('Salamandreorange (5).png');
+background-repeat: no-repeat;
+}  
+
+body{margin:-17px;}
+
+
+
+
+.menu {
+   
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    background-color:#1abc9c;       /* Ajout de la couleur d'arrière-plan */
+    justify-content: space-around;
+  /* Alignements des liens dans le menu */
+}
+
+
+.menu li  {
+    list-style-type: none ;       /* Suppression des puces */
+    position: relative;
+    top: 3px;
+    padding: 5px 5px 5px; /* 3 valeurs */
+}
+
+
+
+
+.menu a {
+
+
+    display:block;                /* Transformation en block */
+    min-width: 120px;           /* Largeur minimale des liens */   
+    margin: 0.4rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: #1ABC9C;    /* Arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 5px;           /* Arrondis des bordures */
+    text-shadow: 1px 1px 2px gray;
+    box-shadow: 0px 1px 1px gray;
+    transition: all 0.5s ;          /* Ajout des effets de transition */
+}
+.menu a.actif {    
+    background-color: #000 ; 
+    color: #1ABC9C ;
+    border-color: #1ABC9C ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color:orange;
+    color: white;
+    border-color: white;
+}
+
+
+
+/* TEXTE QUI DéFILE */ 
+.defileParent {
+	display: block;
+	margin: 3em auto;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 1000px;
+}
+.defile {
+	display:block;
+	-webkit-animation:linear marqueelike 50s infinite ;
+	-moz-animation:linear marqueelike 50s infinite ;
+	-o-animation:linear marqueelike  50s infinite ;
+	-ms-animation:linear marqueelike 50s infinite ;
+	animation:linear marqueelike 50s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:25px;
+}
+
+
+
+.defile:after {
+	content:attr(data-text);
+	position:absolute;
+	white-space:nowrap;
+	padding-left:10px;
+}
+
+@-webkit-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-moz-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-o-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@-ms-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+@keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+
+@media only screen and (max-width: 860px) {
+.defileParent {
+	display: block;
+	margin: 3em auto;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.defile {
+	display:block;
+	-webkit-animation:linear marqueelike 15s infinite ;
+	-moz-animation:linear marqueelike 15s infinite ;
+	-o-animation:linear marqueelike 15s infinite ;
+	-ms-animation:linear marqueelike 15s infinite ;
+	animation:linear marqueelike 15s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:25px;
+}
+}
+
+.rubrique{
+
+    padding: 60px;
+  background-color: #fcfcfc;  
+    text-align: center;
+    
+}
+
+
+
+.block1{
+    
+
+
+     margin:  auto;
+  width:90%;
+  height: 800px;
+  background-color:#d4d4d4;
+  border-radius: 5px;
+ 
+}
+
+.block2{
+    
+
+
+    margin:  auto;
+ width:90%;
+ height: 400px;
+ background-color:#d4d4d4;
+ border-radius: 5px;
+
+}
+
+.tapis2{
+    background-color: rgb(255, 0, 0);
+    z-index: 1;
+    position:absolute;
+    left: 10%;
+    top: 540px;
+    width: 80%;
+    height: 100px;
+    
+  
+   vertical-align: 50%;
+   font-size: 1.3em;
+}
+
+.tapis{
+    background-color: orange;
+    z-index: 1;
+    position:absolute;
+    left: 10%;
+    top: 1060px;
+    width: 80%;
+    height: 100px;
+    
+  
+   vertical-align: 50%;
+   font-size: 1.3em;
+}
+.tapis1{
+    background-color: orange;
+    z-index: 1;
+    position:absolute;
+    left: 10%;
+    top: 2000px;
+    width: 80%;
+    height: 100px;
+    
+  
+   vertical-align: 50%;
+   font-size: 1.3em;
+}
+
+
+.space{
+
+    margin-bottom: 100px;
+}
+@media (min-width: 1000px) {
+   
+  
+}
+
+  
